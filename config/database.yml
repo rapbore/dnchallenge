@@ -30,4 +30,4 @@ production:
   username: papitest1
   password: clavetest1
   host: 52.3.188.254
-  port: 3306
+
