@@ -29,9 +29,9 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  database: papitest
+  database: PapiTest
   username: papi
   password: notas
-  host: 52.3.188.254
+  host: http://52.3.188.254
   #port: 3306
 
