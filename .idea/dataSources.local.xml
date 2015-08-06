@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="Rails dn_challenge: development" uuid="ae09afb7-585a-44eb-bda9-db3bd5efe4b2">
-      <first-sync>true</first-sync>
-    </data-source>
+    <data-source name="Rails dn_challenge: development" uuid="ae09afb7-585a-44eb-bda9-db3bd5efe4b2" />
   </component>
 </project>
