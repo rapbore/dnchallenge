@@ -39,9 +39,11 @@
           xhrFields: {
               withCredentials: true
           },
-          url: "https://papitest1:clavetest1@52.3.188.254/Send.php",
+          url: "https://52.3.188.254/Send.php",
           type: "POST",
-          data: {Mobile: '56985566689', Message: 'Hola'},
+          username: 'papitest1',
+          password: 'clavetest1',
+          data: [{Mobile: '56985566689', Message: 'Hola'}],
           success: function (jsonData) {
               console.log(jsonData);
           },
