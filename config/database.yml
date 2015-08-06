@@ -27,10 +27,17 @@ test:
   port: 5432
 
 production:
-  adapter: mysql2
-  encoding: utf8
-  database: PapiTest
-  username: papitest1
-  password: clavetest1
-  host: 52.3.188.254
-
+  #adapter: mysql2
+  #encoding: utf8
+  #database: PapiTest
+  #username: papitest1
+  #password: clavetest1
+  #host: 52.3.188.254
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: ec2-204-236-226-63.compute-1.amazonaws.com
+  database: db0oh6cd8rqj4q
+  username: sfbfcsprtvfkdc
+  password: sZfP_6BD2hFt_h3KrLJUia9mBr
+  port: 5432

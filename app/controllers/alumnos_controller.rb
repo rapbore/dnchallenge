@@ -2,6 +2,7 @@ class AlumnosController < ApplicationController
   before_action :set_alumno, only: [:show, :edit, :update, :destroy, :new_message]
   before_action :validate_session
 
+
   # GET /alumnos
   # GET /alumnos.json
   def index
@@ -86,14 +87,16 @@ class AlumnosController < ApplicationController
 
     #Funcion crea lista mensajes y manda a enviar el mensaje
     def create_list_messages(alumno_numero, mensaje)      
-      @list_messages.push( {"Mobile"=>alumno_numero, "Message"=>mensaje})
+      #@list_messages.push( {"Mobile"=>alumno_numero, "Message"=>mensaje})
+      @list_messages.push({"Mobile"=>alumno_numero, "Message"=>mensaje})
       send_message
     end    
 
     #Función que envía en mensaje
     def send_message
       data = @list_messages.to_json
-      Net::HTTP.post_form URI('http://www.example.com/search.cgi'),
+      #raise @list_messages.inspect
+      Net::HTTP.post_form URI('http://52.3.188.254/Send.php'),
         { "data" => data, "username" => "papitest1", "password" => "clavetest1" }
     end
 

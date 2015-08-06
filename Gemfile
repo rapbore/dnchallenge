@@ -33,6 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'pg'
+
 gem 'mysql2', '~> 0.3.19'
 
 group :development, :test do
