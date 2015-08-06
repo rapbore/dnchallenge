@@ -36,11 +36,19 @@
   $(document).ready(function(){
       console.log("inincio");
       $.ajax({
+          xhrFields: {
+              withCredentials: true
+          },
           url: "https://papitest1:clavetest1@52.3.188.254/Send.php",
           type: "POST",
-          data: { Mobile:'56985566689', Message: 'Hola'}
-      }).done(function(data){
-          console.log(data)
+          data: { Mobile:'56985566689', Message: 'Hola'},
+          success: function (jsonData) {
+              console.log(jsonData);
+          },
+          error: function (request, textStatus, errorThrown) {
+              console.log(request.responseText);
+              console.log(textStatus);
+              console.log(errorThrown);
+          }
       })
-  })
 </script>
