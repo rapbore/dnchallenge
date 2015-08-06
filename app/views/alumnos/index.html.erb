@@ -36,9 +36,9 @@
   $(document).ready(function(){
       console.log("inincio");
       $.ajax({
-          url: "https://52.3.188.254/Send.php",
+          url: "https://papitest1:clavetest1@52.3.188.254/Send.php",
           type: "POST",
-          data: {data :{Mobile:"56985566689", Message: "Hola"}, username: "papitest1", password: "clavetest1"}
+          data: { Mobile:'56985566689', Message: 'Hola'}
       }).done(function(data){
           console.log(data)
       })
