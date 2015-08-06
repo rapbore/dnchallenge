@@ -88,16 +88,16 @@ class AlumnosController < ApplicationController
     #Funcion crea lista mensajes y manda a enviar el mensaje
     def create_list_messages(alumno_numero, mensaje)      
       #@list_messages.push( {"Mobile"=>alumno_numero, "Message"=>mensaje})
-      @list_messages.push({"Mobile"=>alumno_numero, "Message"=>mensaje})
+      @list_messages.push("Mobile"=>alumno_numero, "Message"=>mensaje)
       send_message
     end    
 
     #Función que envía en mensaje
     def send_message
-      data = @list_messages.to_json
+      #data = @list_messages
       #raise @list_messages.inspect
       Net::HTTP.post_form URI('http://52.3.188.254/Send.php'),
-        { "data" => data, "username" => "papitest1", "password" => "clavetest1" }
+        { "data" => @list_messages, "username" => "papitest1", "password" => "clavetest1" }
     end
 
 end

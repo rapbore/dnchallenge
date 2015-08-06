@@ -27,12 +27,6 @@ test:
   port: 5432
 
 production:
-  #adapter: mysql2
-  #encoding: utf8
-  #database: PapiTest
-  #username: papitest1
-  #password: clavetest1
-  #host: 52.3.188.254
   adapter: postgresql
   pool: 5
   timeout: 5000
