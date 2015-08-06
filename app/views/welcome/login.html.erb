@@ -1,0 +1,7 @@
+<h2>Log in</h2>
+
+<%= form_tag welcome_validate_login_path do %>
+	<%= text_field_tag :username %><br>
+	<%= password_field_tag :password, autocomplete: "off" %><br>
+	<%= submit_tag "Log in" %>
+<% end %>

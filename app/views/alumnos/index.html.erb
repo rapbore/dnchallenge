@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Alumnos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Curso</th>
+      <th>Colegio</th>
+      <th>Numero</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alumnos.each do |alumno| %>
+      <tr>
+        <td><%= alumno.nombre %></td>
+        <td><%= alumno.curso.nombre %></td>
+        <td><%= alumno.curso.colegio.nombre %></td>
+        <td><%= alumno.numero %></td>
+        <td><strong><%= link_to 'Send Message', new_message_path(alumno) %></strong></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Alumno', new_alumno_path %>

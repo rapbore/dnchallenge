@@ -1,0 +1,23 @@
+<header>
+	<nav class="be-red white large-padding">
+		<ul class=" row center-xs middle-xs">
+			<li class="col-md">
+				<h1 class="no-margin" id="logo">Daddy Notes Challenge</h1>
+			</li>
+          <% if !@sesion.nil? %>
+            <li class="col-md">
+                <%= link_to "SMS Alumno", alumnos_path %>
+            </li>
+            <li class="col-md">
+                <%= link_to "SMS Curso", cursos_path %>
+            </li>
+			<li class="col-md">
+				<%= link_to "SMS Colegio", colegios_path %>
+			</li>
+            <li class="col-md">
+                <%= link_to "Cerrar Sesión (#{@username})", welcome_cerrar_sesion_path, method: :POST%>
+            </li>
+            <%end%>
+		</ul>
+	</nav>
+</header>

@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Send Message to: <%= @colegio.nombre %></strong><br>
+</p>
+
+<%= form_tag colegios_create_message_path do  %>
+	<%= text_field_tag :message %><br>
+	<%= hidden_field_tag 'id_colegio' , @colegio.id  %><br>
+	<%= submit_tag "Send Message" %>
+<% end %><br>
+
+<%= link_to 'Back', colegios_path %>

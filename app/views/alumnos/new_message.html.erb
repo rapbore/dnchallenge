@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Send Message to: <%= @alumno.nombre %></strong><br>
+  <strong>Phone Number: <%= @alumno.numero %></strong>
+</p>
+
+<%= form_tag alumnos_create_message_path do  %>
+	<%= text_field_tag :message %><br>
+	<%= hidden_field_tag 'alumno_numero' , @alumno.numero  %><br>
+	<%= submit_tag "Send Message" %>
+<% end %><br>
+
+<%= link_to 'Back', alumnos_path %>
