@@ -32,8 +32,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'pg'
-
 gem 'mysql2', '~> 0.3.19'
 
 group :development, :test do
@@ -50,6 +48,6 @@ group :development, :test do
 end
 
 group :production do
-
+  gem 'pg'
 end
 
