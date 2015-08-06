@@ -33,5 +33,5 @@ production:
   username: papi
   password: notas
   host: http://52.3.188.254
-  #port: 3306
+  port: 3306
 
