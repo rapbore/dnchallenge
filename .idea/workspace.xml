@@ -77,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/alumnos/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.6413044">
-              <caret line="45" column="51" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="51" />
+              <caret line="45" column="106" selection-start-line="45" selection-start-column="106" selection-end-line="45" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -938,7 +938,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/alumnos/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6413044">
-          <caret line="45" column="51" selection-start-line="45" selection-start-column="44" selection-end-line="45" selection-end-column="51" />
+          <caret line="45" column="106" selection-start-line="45" selection-start-column="106" selection-end-line="45" selection-end-column="106" />
           <folding />
         </state>
       </provider>
