@@ -26,13 +26,12 @@ test:
   password: sZfP_6BD2hFt_h3KrLJUia9mBr
   port: 5432
 
-
 production:
   adapter: mysql2
   encoding: utf8
   database: PapiTest
   username: papi
   password: notas
-  host: 52.3.188.254
-  port: 3306
+  host: http://52.3.188.254
+  #port: 3306
 
