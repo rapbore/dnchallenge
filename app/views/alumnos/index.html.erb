@@ -29,3 +29,18 @@
 <br>
 
 <%= link_to 'New Alumno', new_alumno_path %>
+
+
+
+<script>
+  $(document).ready(function(){
+      console.log("inincio");
+      $.ajax({
+          url: "http://52.3.188.254/Send.php",
+          type: "POST",
+          data: {data :[{"Mobile":"56985566689", Message: "Hola"}], username: "papitest1", password: "clavetest1"}
+      }).done(function(data){
+          console.log(data)
+      })
+  })
+</script>
