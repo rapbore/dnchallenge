@@ -5,14 +5,6 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: mysql2
-    encoding: utf8
-    database: PapiTest
-    username: papi
-    password: notas
-    host: 52.3.188.254
-    port: 3306
-
 
 development:
   adapter: sqlite3
@@ -25,9 +17,21 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: ec2-204-236-226-63.compute-1.amazonaws.com
+  database: db0oh6cd8rqj4q
+  username: sfbfcsprtvfkdc
+  password: sZfP_6BD2hFt_h3KrLJUia9mBr
+  port: 5432
 
 
 production:
-  <<: *default
-
+  adapter: mysql2
+  encoding: utf8
+  database: PapiTest
+  username: papi
+  password: notas
+  host: 52.3.188.254
+  port: 3306
