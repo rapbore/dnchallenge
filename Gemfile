@@ -49,6 +49,6 @@ end
 
 group :production do
   #gem 'pg'
-  gem 'mysql2', '~> 0.3.19'
+  gem 'mysql2'
 end
 
