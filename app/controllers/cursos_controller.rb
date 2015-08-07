@@ -94,7 +94,6 @@ class CursosController < ApplicationController
     #Función que envía en mensaje
     def send_message
       data = @list_messages.to_json
-      Net::HTTP.post_form URI('http://www.example.com/search.cgi'),
-                          { "data" => data, "username" => "papitest1", "password" => "clavetest1" }
+      resp = Net::HTTP.post_form URI("http://52.3.188.254/Send.php"), { "data" => data, "username" => "papitest1", "password" => "clavetest1" }
     end
 end
